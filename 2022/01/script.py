@@ -11,7 +11,7 @@ def findBestNCalories(calories, maxCalories) :
             print(f"{calories} > {mc}({idx})")
             maxCalories.insert(idx, calories)
             maxCalories.pop()
-            return
+            break
 
 for line in fileinput.input() :
     if line == "\n" :                
